@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/site/style.css/style.css">
+    <script src="/site/javascript/script.js"></script>
+    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="https://via.placeholder.com/120x30" alt="Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            ☰
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                        Serviços
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Segurança</a></li>
+                        <li><a class="dropdown-item" href="#">Limpeza</a></li>
+                        <li><a class="dropdown-item" href="#">Bloqueio</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="intelligenceDropdown" role="button" data-bs-toggle="dropdown">
+                        Inteligência
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Análise de Risco</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="toolsDropdown" role="button" data-bs-toggle="dropdown">
+                        Tools
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Pontos de Reputação</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Quem somos <span class="badge bg-success">OTS</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            </ul>
+        </div>
+
+        <div class="d-flex align-items-center">
+            <a href="#" class="login-link">Log In</a>
+            <a href="#" class="btn btn-appointment">Book appointment</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Carousel -->
+<div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="/site/img/imagen1.avif" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="/site/img/logo.jpg" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="/site/img/image2.jpg" alt="Terceiro Slide">
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+</div>
+
+
+
+<!-- Chat -->
+<div class="chat-container">
+    <h3>Chat de Perguntas e Respostas</h3>
+    <div class="chat-box" id="chatBox"></div>
+    <div class="input-group">
+        <textarea id="userInput" placeholder="Digite sua pergunta..."></textarea>
+        <button id="sendBtn" class="send-button">
+            <i class="fas fa-paper-plane"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Imagem e texto -->
+<section class="reputation-section">
+    <div class="text-container">
+        <h2 >Gostaria de entrar em contato <br> diretamente com a gente?</h2>
+        <p class="subtitle">Nós podemos ajudar você.</p>
+        <p class="description">
+            A OutPutTech verifica qualquer tipo de fake news e mantemos a reputação da sua empresa.
+        </p>
+        <a href="#" class="btn btn-primary">Contate-nos</a>
+    </div>
+    <div class="image-container">
+        <img src="/site/img/logo.jpg" alt="Profissionais trabalhando no computador">
+    </div>
+</section>
+
+</body>
+</html>
